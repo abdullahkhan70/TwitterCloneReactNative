@@ -11,6 +11,7 @@ module.exports ={
         textAlign: 'center',
         marginTop: 20,
     },
+
     textInput: {
         height: 50,
         width: '75%',
@@ -21,6 +22,7 @@ module.exports ={
         borderBottomColor: '#808080',
         fontSize: 22,
     },
+    
     textInput2: {
         height: 50,
         width: '75%',
@@ -36,5 +38,18 @@ module.exports ={
         marginRight: 50,
         marginTop: 10,
         fontSize: 18,
+    },
+    modalContainer:{
+        flex: 1,
+        flexDirection: 'column',
+        marginTop: 50,
+        marginLeft: 40,
+       
+    },
+    modalText:{
+        fontSize: 18,
+        color: '#808080',
+        marginTop: 15,
+        textAlign: 'center'
     }
 }

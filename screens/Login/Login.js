@@ -10,6 +10,9 @@ export default class Login extends Component{
         function pressHandler(){
             navigate('ForgotPass');
         }
+        function loginBtn(){
+            navigate('MainUserScreen');
+        }
 
         return(
             <ScrollView 
@@ -51,6 +54,7 @@ export default class Login extends Component{
                <TouchableHighlight
                     style={LoginStyle.submit}
                     underlayColor='#fff'
+                    onPress={loginBtn}
                 >
                     <Text style={LoginStyle.submitText}>Log in</Text>
                 </TouchableHighlight>
