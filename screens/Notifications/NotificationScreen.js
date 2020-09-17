@@ -7,6 +7,7 @@ import {
   DataProvider,
   LayoutProvider,
 } from "recyclerlistview";
+import FloatingActionButton from '../../Components/FloatingActionButton';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
@@ -106,6 +107,7 @@ export default class NotificationScreen extends React.Component {
           layoutProvider={this.LayoutProvider}
           forceNonDeterministicRendering={true} 
         />
+        <FloatingActionButton message="User Notification!" visible={"False"} />
       </View>
     );
   }

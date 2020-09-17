@@ -17,12 +17,11 @@ import {
   DataProvider,
   LayoutProvider,
 } from "recyclerlistview";
-
-
+import FloatingActionButton from '../../Components/FloatingActionButton';
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 
-export default class UserTimelines extends React.Component {
+export default class UserTimeline extends React.Component {
   constructor(props) {
     super(props);
     const fakeData = [];
@@ -214,9 +213,10 @@ export default class UserTimelines extends React.Component {
           forceNonDeterministicRendering={true}
 
         />
+        <FloatingActionButton message={"User Time Line is Pressed!"} visible={"False"}/>
       </View>
     );
-  }
+  } 
 }
 const styles = StyleSheet.create({
   container: {

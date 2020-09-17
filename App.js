@@ -5,11 +5,15 @@ import * as Progress from 'react-native-progress';
 import Home from './screens/Home/Home'
 import HomeStack from './routes/HomeStack'
 import 'react-native-gesture-handler';
+import DummyNavigation from './DummySourceCode/DummyNavigation'
+
+// React Navigation Version 5:
+//https://www.youtube.com/watch?v=nQVCkqvU1uE
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomeStack />     
+      <DummyNavigation />     
     </View>
   );
 }

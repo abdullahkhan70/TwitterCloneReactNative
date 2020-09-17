@@ -18,14 +18,6 @@ export default class SignupScreen extends React.Component{
         const { counter, showText } = this.state;
         let charCounter = 0;
 
-        // useEffect(() => {
-        //     const id = setInterval(() => setDateTime(new Date()), 1000);
-        //     return () => {
-        //         clearInterval(id);
-        //     }
-        // }, []);
-        
-        
         return(
             <ScrollView style={SignupScreenStyle.container} showsVerticalScrollIndicator={false} onPress={
                 () => {
